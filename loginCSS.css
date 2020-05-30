@@ -1,0 +1,17 @@
+body {
+	
+}
+
+boxHeader {
+	width: 100%;
+	background-color: gray;
+	height: 20%;
+}	
+
+
+h1 {
+	color: #e60000;
+	text-transform: uppercase;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-weight: bold;
+}	

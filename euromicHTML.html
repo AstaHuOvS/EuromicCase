@@ -1,15 +1,56 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title> Home </title>
+	<link rel="stylesheet" href="euromicCSS.css">
+	<script type="text/javascript" src="euromicJS.js"></script>
+	<title> Home </title>
 </head>
 
 <body>
-<h1>EUROMIC A/S </h1>
+	<h1 id="euromicHeader2">EUROMIC A/S </h1>
 
-<button type="button", name="buttonNew", onclick="CreateNewOrder()">
-New
-</button>
+	<button type="button", name="buttonNew"">
+	New
+	</button>
+	
+	<button class="accordion">Section 1</button>
+	<div class="panel">
+	  <p> SO632186</p>
+	</div>
+	
+	<br>
+
+	<button class="accordion">Section 2</button>
+	<div class="panel">
+	  <p></p>
+	</div>
+	
+	<br>
+
+	<button class="accordion">Section 3</button>
+	<div class="panel">
+	  <p></p>
+	</div>
+	
+	<br>
+	
+	<!--Hvis koden bliver placeret i et JavaScript fungerer det ikke, så den bliver placeret her i stedet -->
+	<script>
+	var acc = document.getElementsByClassName("accordion");
+	var i;
+
+	for (i = 0; i < acc.length; i++) {
+	  acc[i].addEventListener("click", function() {
+		this.classList.toggle("active");
+		var panel = this.nextElementSibling;
+		if (panel.style.display === "block") {
+		  panel.style.display = "none";
+		} else {
+		  panel.style.display = "block";
+		}
+	  });
+	}
+	</script>
 
 
 </body>
