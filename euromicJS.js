@@ -1,26 +1,35 @@
 
-//function test() {
-	//int test = 5;
-//}
-
-//function CreateNewOrder() {
-	//string new = hello;
-	//return string;
-//}
-
-function testingthiscrap() {
-	var acc = document.getElementsByClassName("accordion");
-	var i;
-
-	for (i = 0; i < acc.length; i++) {
-	acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.display === "block") {
-      panel.style.display = "none";
-    } else {
-      panel.style.display = "block";
-    }
-  });
+function CreateNewOrder() {
+	var createNewOrderPopup = window.prompt("Please enter new order number:", "Number");
+	var orderNumberNew;
+	var txt;
+	
+	alert(createNewOrderPopup);
+	
+	if (createNewOrderPopup !=  "name" || createNewOrderPopup == null || createNewOrderPopup == "") 
+	{
+		txt = "Error. Order not found";
 	}
+	else
+	{
+		document.getElementsByValue("test123").style.backgroundColor = "green";
+	}
+}
+
+function confirmOrderButton() {
+	var confirmOrderClick = prompt("Please enter order number:", "Number");
+	if (confirmOrderClick != ){}
+
+}
+
+
+function myFunction() {
+  var txt;
+  var person = prompt("Please enter your name:", "Harry Potter");
+  if (person == null || person == "") {
+    txt = "User cancelled the prompt.";
+  } else {
+    txt = "Hello " + person + "! How are you today?";
+  }
+  document.getElementById("demo").innerHTML = txt;
 }

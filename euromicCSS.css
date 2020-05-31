@@ -10,8 +10,8 @@ h1 {
 }
 
 .collapsible {
-  background-color: #eee;
-  color: #444;
+  background-color: red/*#eee*/;
+  color: red/*#444*/;
   cursor: pointer;
   padding: 18px;
   width: 100%;
@@ -25,11 +25,11 @@ h1 {
   padding: 0 18px;
   display: none;
   overflow: hidden;
-  background-color: #f1f1f1;
+  background-color: red /*#f1f1f1*/;
 }
 
 .accordion {
-  background-color: #eee;
+  background-color: red /*#eee*/;
   color: #444;
   cursor: pointer;
   padding: 18px;
