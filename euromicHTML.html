@@ -9,38 +9,9 @@
 <body>
 	<h1 id="euromicHeader2">EUROMIC A/S </h1>
 
-	<button type="button", value="buttonNew" onclick="createNewOrder()">Ny ordre </button>
+	<!--<button type="button", value="buttonNew" onclick="createNewOrder()">Ny ordre </button>
 	<script>
 	function createNewOrder() {
-	var myList = new List([SO127649, SO850357, SO482947]);
-	var createNewOrderPopup = window.prompt("Please enter new order number:", "Number");
-	var orderNumberNew = createNewOrderPopup;
-	var txt;
-	if (createNewOrderPopup == null || createNewOrderPopup == "")
-	{
-	txt = "";
-	document.getElementById("demo").innerHTML = txt;
-	}
-	else
-	{
-		for(int numberX : myList) {
-			if(numberX == orderNumberNew)
-			{
-			txt = "Error! " + orderNumberNew + "already exsists";
-			}
-			else
-			{
-			var btn = document.createElement("accordion");
-			btn.innerHTML = orderNumberNew;
-			document.body.appendChild(btn);
-			}
-		}
-	}
-	}	
-	</script>
-	<button type="button", value="buttonConfirm" onclick="confirmOrderButton()"> Bekræft ordre </button>
-	<script>
-	function confirmOrderButton() {
 	var confirmOrderPopup = window.prompt("Please enter order number:", "Number");
 	var txt;
 		if (confirmOrderPopup !=  "test123" || confirmOrderPopup== null || confirmOrderPopup == "") 
@@ -50,7 +21,49 @@
 		}
 		else
 		{
-			document.getElementById("test123").style.backgroundColor = '#99ff33';
+			document.getElementById("test123").style.backgroundColor = '#ff33cc';
+		}
+	
+	}
+	<!--var myList = new List([SO127649, SO850357, SO482947]);
+	<!--var createNewOrderPopup = window.prompt("Please enter new order number:", "Number");
+	<!--var orderNumberNew = createNewOrderPopup;
+	<!--var txt;
+	<!--if (createNewOrderPopup == null || createNewOrderPopup == "")
+	//{
+	//txt = "";
+	//document.getElementById("demo").innerHTML = txt;
+	//}
+	//else
+	//{
+		//for(int numberX : myList) {
+			//if(numberX == orderNumberNew)
+			//{
+			//txt = "Error! " + orderNumberNew + "already exsists";
+			//}
+			//else
+			//{
+			//var btn = document.createElement("accordion");
+			//btn.innerHTML = orderNumberNew;
+			//document.body.appendChild(btn);
+			//}
+		//}
+	//}
+	//}	
+	</script>-->
+	<button type="button", value="buttonConfirm" onclick="confirmOrderButton()"> Bekræft ordre </button>
+	<script>
+	function confirmOrderButton() {
+	var confirmOrderPopup = window.prompt("Please enter order number:", "Number");
+	var txt;
+		if (confirmOrderPopup !=  "SO354678" || confirmOrderPopup== null || confirmOrderPopup == "") 
+		{
+			txt = "Error. Order not found";
+			document.getElementById("demo").innerHTML = txt;
+		}
+		else
+		{
+			document.getElementById("SO354678").style.backgroundColor = '#99ff33';
 		}
 	
 	}
@@ -61,35 +74,35 @@
 	var orderWrongPopup = window.prompt("Please enter order number:", "Number");
 	var orderNumberNew;
 	var txt;
-		if (orderWrongPopup !=  "test123" || orderWrongPopup == null || orderWrongPopup == "") 
+		if (orderWrongPopup !=  "SO354678" || orderWrongPopup == null || orderWrongPopup == "") 
 		{
 			txt = "Error. Order not found";
 			document.getElementById("demo").innerHTML = txt;
 		}
 		else
 		{
-			document.getElementById("test123").style.backgroundColor = '#ffff00';
+			document.getElementById("SO354678").style.backgroundColor = '#ffff00';
 		}
 	
 	}
 	</script>
 	<br>
 	<p id="demo"></p>
-	<button class="accordion" id="test123">test123</button>
+	<button class="accordion" id="SO354678">SO354678</button>
 	<div class="panel">
 	  <p></p>
 	</div>
 	
 	<br>
 
-	<button class="accordion"></button>
+	<button class="accordion">SO127649</button>
 	<div class="panel">
 	  <p></p>
 	</div>
 	
 	<br>
 
-	<button class="accordion"></button>
+	<button class="accordion">SO850357</button>
 	<div class="panel">
 	  <p></p>
 	</div>
